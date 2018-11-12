@@ -6,8 +6,10 @@
  ('/',
   function()
   {
-   echo "OK";
+   $sql = new GeovaRS\DB\Sql();
+   $results = $sql->select("SELECT * FROM tb_users");
+   echo json_encode($results);
   }
  );
-$app->run();
+ $app->run();
 ?>

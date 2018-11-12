@@ -6,8 +6,18 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit0dca83875cc4d52948d08dee9f23f0e1
 {
-    public static $fallbackDirsPsr4 = array (
-        0 => __DIR__ . '/..' . '/GeovaRS/php-classes/src',
+    public static $prefixLengthsPsr4 = array (
+        'G' => 
+        array (
+            'GeovaRS\\' => 8,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'GeovaRS\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/GeovaRS/php-classes/src',
+        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -41,7 +51,8 @@ class ComposerStaticInit0dca83875cc4d52948d08dee9f23f0e1
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->fallbackDirsPsr4 = ComposerStaticInit0dca83875cc4d52948d08dee9f23f0e1::$fallbackDirsPsr4;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit0dca83875cc4d52948d08dee9f23f0e1::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit0dca83875cc4d52948d08dee9f23f0e1::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit0dca83875cc4d52948d08dee9f23f0e1::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit0dca83875cc4d52948d08dee9f23f0e1::$classMap;
 

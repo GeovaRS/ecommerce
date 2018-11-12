@@ -17,7 +17,7 @@
  {
   "psr-4":
   {
-   "": "vendor\\GeovaRS\\php-classes\\src"
+   "GeovaRS\\": "vendor\\GeovaRS\\php-classes\\src"
   }
  }
 }
