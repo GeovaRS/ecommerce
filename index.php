@@ -1,15 +1,22 @@
 <?php
  require_once("vendor/autoload.php");
- $app = new \Slim\Slim();
- $app->config('debug', true);
+ use \Slim\Slim;
+ use \GeovaRS\Page;
+ $app = new Slim();
+ $app->config('debug', false);
  $app->get
  ('/',
   function()
   {
-   $sql = new GeovaRS\DB\Sql();
-   $results = $sql->select("SELECT * FROM tb_users");
-   echo json_encode($results);
+   $page = new Page();
+   $page->setTpl("index");
   }
  );
  $app->run();
+
+ // Quando chamarem via get o / do meu site,
+ // Carregue a função que carrega o Cabeçalho no método __construct()
+ // Carregue o Template index.
+ // Carregue o método __destruct() da classe Page
+ // Quando tudo estiver carregado Execute $app->run();.
 ?>
