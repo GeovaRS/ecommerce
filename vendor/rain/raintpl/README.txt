@@ -14,7 +14,6 @@ Added autoescape
 Removed Static Cache
 More examples
 
-
 ToDo/Wish list:
 Short syntax: {loop $var} {if $var}
 Template auto generation, in debug mode if a template was not found RainTPL create a dummy template with all the variables used and loop
