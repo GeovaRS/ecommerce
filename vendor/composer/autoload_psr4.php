@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'GeovaRS\\' => array($vendorDir . '/GeovaRS/php-classes/src'),
+ 'GeovaRS\\' => array($vendorDir . '/GeovaRS/php-classes/src'),
 );

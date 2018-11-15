@@ -32,7 +32,7 @@ ul {
   margin-bottom: 20px;
 }
 .page-header {
-  /*border-bottom: 1px solid #ddd;        */
+  /* border-bottom: 1px solid #ddd; */
   margin: 20px 0 10px 0!important;
   position: relative;
   z-index: 1;
@@ -223,18 +223,21 @@ pre.prettyprint > code {
     font-weight: bold;
   }
 
-  .atn {
-    color: #440044;
-  }
+  .atn
+ {
+  color: #440044;
+ }
 
-  .atv {
-    color: #006600;
-  }
+  .atv
+ {
+  color: #006600;
+ }
 }
 /* Specify class=linenums on a pre to get line numbering */
-ol.linenums {
-  margin-top: 0;
-  margin-bottom: 0;
+ol.linenums
+{
+ margin-top: 0;
+ margin-bottom: 0;
 }
 
 /* IE indents via margin-left */
@@ -247,8 +250,9 @@ li.L5,
 li.L6,
 li.L7,
 li.L8,
-li.L9 {
-  /* */
+li.L9
+{
+ /* */
 }
 
 /* Alternate shading for lines */
@@ -256,6 +260,7 @@ li.L1,
 li.L3,
 li.L5,
 li.L7,
-li.L9 {
-  /* */
+li.L9
+{
+ /* */
 }
