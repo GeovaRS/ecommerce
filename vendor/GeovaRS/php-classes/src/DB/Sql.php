@@ -5,7 +5,7 @@
  {
   const HOSTNAME = "127.0.0.1";
   const USERNAME = "ecommerce";
-  const PASSWORD = "kgp15s3n";
+  const PASSWORD = "";
   const DBNAME = "ecommerce";
 
   private $conn;
